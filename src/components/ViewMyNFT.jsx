@@ -18,7 +18,7 @@ const ViewMyNFT = ({ src, duration, delay }) => {
     },
     exit: {
       opacity: 0,
-      height: 0,
+      scale: 1.5,
       transition: {
         ease: "easeOut",
         duration: 0.6,
@@ -44,7 +44,8 @@ const ViewMyNFT = ({ src, duration, delay }) => {
     },
     exit: {
       opacity: 0,
-      height: 0,
+      y: 40,
+      scale: 1.2,
       transition: {
         ease: "easeOut",
         duration: 0.6,
@@ -53,12 +54,7 @@ const ViewMyNFT = ({ src, duration, delay }) => {
   };
 
   return (
-    <motion.div
-      initial="hidden"
-      animate="show"
-      exit="exit"
-      className="m-auto flex flex-col h-screen w-full justify-center items-center gap-8 md:gap-16"
-    >
+    <motion.div className="m-auto flex flex-col h-screen w-full justify-center items-center gap-8 md:gap-16">
       <motion.img
         variants={imageVariants}
         src={src}
