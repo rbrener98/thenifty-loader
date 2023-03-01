@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 // components
-import GridLoader from "./GridLoader";
-import ViewMyNFT from "./ViewMyNFT";
+import GridLoader from "./components/GridLoader";
+import ViewMyNFT from "./components/ViewMyNFT";
 
 import ZISOU_DOG from "./assets/zissou-dog.jpg";
 
